@@ -8,6 +8,10 @@ import { envs } from "./config";
 function main() {
   const app = express();
 
+  app.post("/api/github", (req, res) => {
+    res.json("Github endpoint");
+  });
+
   app.listen(envs.PORT, () => {
     console.log(`App running on port ${envs.PORT}`);
   });
