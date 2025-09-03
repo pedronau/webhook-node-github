@@ -27,6 +27,11 @@ export class GithubSha256Middleware {
     }
   }
 
+  /**
+   * El código que va a continuación viene directamente
+   * de la documentación de GitHub
+   */
+
   private static async verifySignature(
     secret: string,
     header: string,
