@@ -10,7 +10,7 @@ function main() {
   const app = express();
   const controller = new GithubController();
 
-  app.use(express.json()); // para recibir los json
+  app.use(express.json()); 
 
   app.post("/api/github", controller.webhookHandler);
 
